@@ -137,6 +137,8 @@ importers:
         specifier: workspace:*
         version: link:../../sites/dni
 
+  apps/renfe-mcp: {}
+
   apps/web:
     dependencies:
       '@fontsource-variable/inter':
