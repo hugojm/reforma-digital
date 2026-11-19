@@ -26,11 +26,6 @@ const config: NextConfig = {
       },
     ];
   },
-  // El MCP de Renfe es Python y se despliega aparte (apps/renfe-mcp); la web solo lo publica en su dominio.
-  rewrites() {
-    const renfe = process.env.RENFE_MCP_URL;
-    return renfe ? [{ source: '/mcp/renfe', destination: `${renfe}/mcp` }] : [];
-  },
   redirects() {
     return [
       { source: '/explorar', destination: '/', permanent: true },
